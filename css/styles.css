@@ -608,6 +608,7 @@ a.social-media-logo-border:focus .social-media-logo {
 .modal-close-btn:focus {
   background-color: var(--pressed-state);
   fill: var(--white-background);
+  transition: var(--transition);
 }
 
 .labelled-img {
