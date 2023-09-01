@@ -693,6 +693,7 @@ a.social-media-logo-border:focus .social-media-logo {
   width: 264px;
   height: 40px;
   margin-top: 16px;
+  padding-left: 16px;
   background-color: transparent;
   outline: none;
   border-radius: 4px;
@@ -707,7 +708,6 @@ a.social-media-logo-border:focus .social-media-logo {
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.03em;
-  padding-left: 16px;
 }
 
 .sub-button {
