@@ -126,6 +126,12 @@ ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.intro-button:hover,
+.intro-button:focus {
+  background-color: var(--pressed-state);
+  transition: var(--transition);
+}
+
 .what-we-do p {
   font-weight: 400;
   font-size: 16px;
@@ -183,7 +189,7 @@ h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.025px;
+  letter-spacing: 0.025em;
   color: var(--dark);
 }
 
@@ -206,8 +212,7 @@ h4 {
 }
 
 .footer-text {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 101.5px;
 }
 
 footer {
@@ -660,4 +665,222 @@ a.social-media-logo-border:focus .social-media-logo {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.subscription {
+  margin-top: 100px;
+  margin-left: 80px;
+  /* display: flex; */
+}
+
+.subscribe {
+  display: flex;
+}
+
+.sub-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0;
+}
+
+.subscribe-icon {
+  fill: var(--white-background);
+}
+
+.email-box {
+  width: 264px;
+  height: 40px;
+  margin-top: 16px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid var(--white-background);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white-background);
+}
+
+.email-box::placeholder {
+  color: var(--white-background);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+}
+
+.sub-button {
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 24px;
+  display: inline-flex;
+  gap: 16px;
+}
+
+.sub-button:hover,
+.sub-button:focus {
+  background-color: var(--pressed-state);
+  transition: var(--transition);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form {
+  margin-top: 72px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--dark);
+  padding: 0 0 16px 0;
+}
+
+.modal-form label {
+  color: var(--subtle-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.input-box {
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  width: 100%;
+}
+
+.input-wrapper {
+  width: 360px;
+  height: 40px;
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #2e2f4266;
+  margin-top: 4px;
+}
+
+.input-wrapper:focus-within {
+  border: 1px solid var(--primary-brand);
+  fill: var(--primary-brand);
+}
+
+.comment-box {
+  display: block;
+  width: 360px;
+  height: 120px;
+  background-color: transparent;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  margin-top: 4px;
+  padding: 8px 16px;
+}
+
+.comment-box::placeholder {
+  color: #2e2f4266;
+}
+
+.comment-box:focus-within {
+  border: 1px solid var(--primary-brand);
+  fill: var(--primary-brand);
+}
+
+.priv-pol-checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.checkbox-box {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  stroke-width: 1px;
+  stroke: #2e2f4266;
+  outline: transparent;
+}
+
+.checkbox-box:checked + .checkbox-ticked {
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+  background-color: var(--pressed-state);
+  fill: var(--light);
+}
+
+.checkbox-ticked {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f4266;
+  border-radius: 2px;
+  fill: none;
+}
+
+.tick-icon {
+  padding: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.send-button {
+  padding: 16px 32px;
+  width: 50%;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 95px;
+}
+
+.send-button:hover,
+.send-button:focus {
+  background-color: var(--pressed-state);
+  transition: var(--transition);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

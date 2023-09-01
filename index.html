@@ -59,12 +59,97 @@
               <use href="./images/icons.svg#icon-close-button"></use>
             </svg>
           </button>
+          <form class="modal-form">
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+            <label for="name"
+              >Name
+              <div class="input-wrapper">
+                <svg width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input
+                  class="input-box"
+                  id="name"
+                  type="text"
+                  name="name"
+                  required
+                />
+              </div>
+            </label>
+            <label for="phone"
+              >Phone
+              <div class="input-wrapper">
+                <svg width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input
+                  class="input-box"
+                  id="phone"
+                  type="number"
+                  name="phone"
+                  pattern="[0-9+]"
+                  title="Digits only"
+                  required
+                />
+              </div>
+            </label>
+            <label for="email"
+              >Email
+              <div class="input-wrapper">
+                <svg width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input
+                  class="input-box"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+            </label>
+            <label
+              >Comment
+              <textarea
+                class="comment-box"
+                type="text"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+            <label for="accept" class="priv-pol">
+              <div class="priv-pol-checkbox">
+                <input
+                  class="checkbox-box visually-hidden"
+                  type="checkbox"
+                  name="accept"
+                  id="accept"
+                  value="true"
+                  required
+                />
+                <span class="checkbox-ticked">
+                  <svg class="tick-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-tick"></use>
+                  </svg>
+                </span>
+                <div>
+                  I accept the terms and conditions of the
+                  <a href="">Privacy Policy</a>
+                </div>
+              </div>
+            </label>
+            <button class="send-button" type="submit">Send</button>
+          </form>
         </div>
       </div>
       <section class="intro">
         <div class="container">
           <h1>Effective Solutions for Your Business</h1>
-          <button data-modal-open type="button">Order Service</button>
+          <button class="intro-button" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="what-we-do">
@@ -371,7 +456,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-content">
+    <footer>
       <div class="container">
         <div class="footer-text">
           <a class="logotype-footer" href="/index.html" target="_self"
@@ -414,6 +499,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscription">
+          <form class="subscribe">
+            <label for="email">
+              <p class="sub-desc">Subscribe</p>
+              <input
+                id="email"
+                class="email-box"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="sub-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
