@@ -674,9 +674,9 @@ a.social-media-logo-border:focus .social-media-logo {
   /* display: flex; */
 }
 
-.subscribe {
+/* .subscribe {
   display: flex;
-}
+} */
 
 .sub-desc {
   font-size: 16px;
@@ -711,6 +711,10 @@ a.social-media-logo-border:focus .social-media-logo {
   letter-spacing: 0.03em;
 }
 
+.input-box-and-button {
+  display: flex;
+  gap: 24px;
+}
 .sub-button {
   padding: 8px 24px;
   width: 165px;
@@ -724,8 +728,7 @@ a.social-media-logo-border:focus .social-media-logo {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  margin-top: 40px;
-  margin-left: 24px;
+  margin-top: 16px;
   display: inline-flex;
   gap: 16px;
 }

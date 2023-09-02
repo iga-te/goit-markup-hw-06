@@ -89,7 +89,6 @@
                   id="phone"
                   type="number"
                   name="phone"
-                  pattern="[0-9+]"
                   title="Digits only"
                   required
                 />
@@ -502,23 +501,25 @@
         </div>
         <div class="subscription">
           <form class="subscribe">
-            <label for="email">
-              <p class="sub-desc">Subscribe</p>
-              <input
-                id="email"
-                class="email-box"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-            </label>
-            <button class="sub-button" type="submit">
-              Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
+            <p class="sub-desc">Subscribe</p>
+            <div class="input-box-and-button">
+              <label for="sub-email">
+                <input
+                  id="sub-email"
+                  class="email-box"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="sub-button" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
